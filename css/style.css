@@ -108,18 +108,85 @@ input[type="submit"]:hover {
 
 .title-description {
     position: relative;
-    top: 80px;
+    top: 220px;
     color: #F7BD3B;
     font-weight: 300;
-    font-size: 100px;
+    font-size: 30px;
+    background: black;
+    opacity: 0.7;
+    text-align: center;
+    width: 300px;
+    margin-left: 85px;
+}
+
+.title-description span {
+ color: #fff;
 }
 
 .text-description {
     position: relative;
-    top: 110px;
+    top: 230px;
     color: white;
-    font-size: 18px;
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 40px;
+    background: black;
+    opacity: 0.7;
+    text-align: center;
+    width: 240px;
+    margin-left: 110px;
+}
+
+.text-body {
+    position: relative;
+    top: 250px;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    width: 280px;
+    margin-left: 90px;
+}
+
+
+.title-description2 {
+    position: relative;
+    top: 150px;
+    color: #F7BD3B;
+    font-weight: 300;
+    font-size: 30px;
+    background: black;
+    opacity: 0.7;
+    text-align: center;
+    width: 300px;
+    margin-left: 85px;
+}
+
+.title-description2 span {
+ color: #fff;
+}
+
+.text-description2 {
+    position: relative;
+    top: 160px;
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    background: black;
+    opacity: 0.7;
+    text-align: center;
+    width: 240px;
+    margin-left: 110px;
+}
+
+.text-body2 {
+    position: relative;
+    top: 180px;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    width: 280px;
+    margin-left: 90px;
 }
 
 

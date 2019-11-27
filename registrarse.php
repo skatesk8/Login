@@ -15,7 +15,8 @@
         <div class="ctn-text">
             <div class="capa"></div>
             <h1 class="title-description">NUEVA  &nbsp;<span>COLECCION</span></h1>
-            <p class="text-description"></p>
+            <p class="text-description">DE VERANO</p>
+            <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, iste, vitae! Nam maxime tempora sit velit molestiae quibusdam optio modi!</p>
         </div>
 
         <div class="ctn-form">
