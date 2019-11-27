@@ -9,7 +9,7 @@
 <body>
 	<div class="container-all">
 		<div class="ctn-text">
-			<div class="capa"> </div>
+			<div class="capa"></div>
 			<h1 class="title-description2">NUEVA  &nbsp;<span>COLECCION</span></h1>
             <p class="text-description2">DE VERANO</p>
             <p class="text-body2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, iste, vitae! Nam maxime tempora sit velit molestiae quibusdam optio modi!</p>
