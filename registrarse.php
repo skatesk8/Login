@@ -1,3 +1,9 @@
+<?php 
+
+include 'codigo-registro.php';
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -23,16 +29,17 @@
             <img src="images/logo-magtimus-small.png" alt="" class="logo">
             <h1 class="title">Registrarse</h1>
 
-            <form action="" method="post">             
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">             
                 <label for="">Nombre de Usuario</label>
                 <input type="text" name="username">
-                <span class="msg-error"></span>
+                <span class="msg-error"><?php echo $username_err ?></span>
                 <label for="">Email</label>
                 <input type="text" name="email">
                 <span class="msg-error"></span>
                 <label for="">Contraseña</label>
                 <input type="password" name="password">
                 <span class="msg-error"></span>
+
                 <input type="submit" value="Registrarse">
 
             </form>
