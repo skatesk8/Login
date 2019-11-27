@@ -74,6 +74,10 @@ require_once "conexion.php";
 	// COMPROBANDO LOS ERRORES DE ENTRADA ANTES DE INSERTAR LOS DATOS
 	if (empty($username_err) && empty($email_err) && empty($password_err)) {
 		$sql = "INSERT INTO usuarios (usuario, email, contraseña) VALUES (?, ? ,?)";
+
+		if ($stmt) {
+			# code...
+		}
 	}
 }
 
