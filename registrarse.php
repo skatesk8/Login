@@ -32,13 +32,13 @@ include 'codigo-registro.php';
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">             
                 <label for="">Nombre de Usuario</label>
                 <input type="text" name="username">
-                <span class="msg-error"><?php echo $username_err ?></span>
+                <span class="msg-error"><?php echo $username_err; ?></span>
                 <label for="">Email</label>
                 <input type="text" name="email">
-                <span class="msg-error"></span>
+                <span class="msg-error"><?php echo $email_err; ?></span>
                 <label for="">Contraseña</label>
                 <input type="password" name="password">
-                <span class="msg-error"></span>
+                <span class="msg-error"><?php echo $password_err; ?></span>
 
                 <input type="submit" value="Registrarse">
 

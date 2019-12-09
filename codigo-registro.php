@@ -22,7 +22,7 @@ require_once "conexion.php";
 			if (mysqli_stmt_execute($stmt)) {
 				mysqli_stmt_store_result($stmt);
 
-				if (mysqli_stmt_rows($stmt) == 1) {
+				if (mysqli_stmt_num_rows($stmt) == 1) {
 					$username_err = "Este correo ya está en uso";
 				} else {
 					$username = trim($_POST["username"]);
@@ -49,7 +49,7 @@ require_once "conexion.php";
 			if (mysqli_stmt_execute($stmt)) {
 				mysqli_stmt_store_result($stmt);
 
-				if (mysqli_stmt_rows($stmt) == 1) {
+				if (mysqli_stmt_num_rows($stmt) == 1) {
 					$email_err = "Este nombre de usuario ya está en uso";
 				} else {
 					$email = trim($_POST["email"]);
@@ -75,12 +75,24 @@ require_once "conexion.php";
 	if (empty($username_err) && empty($email_err) && empty($password_err)) {
 		$sql = "INSERT INTO usuarios (usuario, email, contraseña) VALUES (?, ? ,?)";
 
-		if ($stmt) {
-			# code...
+		if ($stmt = mysqli_prepare($conexion, $sql)) {
+		mysqli_stmt_bind_param($stmt, "sss", $param_username, $param_email, $param_password);
+
+
+		//ESTABLECMIENTO PARAMETRO
+		$param_username = $username;
+		$param_email = $email;
+		$param_password = password_hash($password, PASSWORD_DEFAULT); //Encriptando contraseña
+
+		if (mysqli_stmt_execute($stmt)) {
+				header("location: Index.php");
+			} else {
+				echo "Algo salio mal, intentalo despues";
+			}	
 		}
 	}
+
+	 mysqli_close($conexion);
 }
 
  ?>
-
-<
