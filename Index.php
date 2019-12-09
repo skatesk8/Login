@@ -1,3 +1,9 @@
+<?php
+
+require "codigo-login.php";
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,13 +23,13 @@
 
 		<div class="ctn-form">
 			<h1 class="title">Iniciar Sesión</h1>
-			<form action="">
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
 				<label for="">Email</label>
-				<input type="text" name="Email">
-				<span class="msg-error"></span>
+				<input type="text" name="email">
+				<span class="msg-error"><?php echo $email_err; ?></span>
 				<label for="">Contraseña</label>
 				<input type="password" name="password">
-				<span class="msg-error"></span>
+				<span class="msg-error"><?php echo $password_err; ?></span>
 				<input type="submit" value="Iniciar">
 			</form>
 			<span class="text-footer"> ¿Aún no te has regsitrado?

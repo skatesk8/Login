@@ -190,6 +190,13 @@ input[type="submit"]:hover {
     margin-left: 90px;
 }
 
+/* TEXTO DE ERROR */
+
+.msg-error {
+    color: red;
+    display: block;
+    margin-top: 10px;
+}
 
 /* RESPONSIVE */
 
